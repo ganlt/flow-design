@@ -1,0 +1,439 @@
+
+@font-face {
+  font-family: finex;
+  src: url('./iconfont.eot');
+  src: url('./iconfont.eot') format('embedded-opentype'), url('./iconfont.woff') format('woff'), url('./iconfont.ttf') format('truetype')
+}
+.form-flow-config {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  width: 300px;
+  border-left: solid 1px #e0e0e0;
+  font-size: 14px;
+}
+
+.form-flow-config .config-tab {
+  border-bottom: solid 1px #e0e0e0;
+  height: 45px
+}
+
+.form-flow-config .config-tab .flow-tab,
+.form-flow-config .config-tab .node-tab {
+  display: inline-block;
+  width: 145px;
+  height: 45px;
+  line-height: 45px;
+  border-bottom: solid 3px transparent;
+  text-align: center;
+  cursor: pointer
+}
+
+.form-flow-config .config-tab .flow-tab,
+.form-flow-config .config-tab.tab-select .node-tab {
+  border-bottom-color: #3A40D4
+}
+
+.form-flow-config .config-tab.tab-select .flow-tab {
+  border-bottom-color: transparent
+}
+
+.form-flow-config .config-content,
+.form-flow-config .config-message {
+  padding: 15px 10px;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow-x: hidden;
+  overflow-y: auto
+}
+
+.form-flow-config .config-content .empty-message,
+.form-flow-config .config-message .empty-message {
+  padding-top: 100px;
+  font-size: 24px;
+  color: #989898;
+  text-align: center
+}
+
+.form-flow-config .config-content .filter-pane,
+.form-flow-config .config-message .filter-pane {
+  top: 160px !important
+}
+
+.form-flow-config .config-content .config_pane,
+.form-flow-config .config-message .config_pane {
+  padding: 0
+}
+
+
+.config_pane {
+  padding: 0 10px
+}
+
+.config_pane .cfg_title {
+  position: relative;
+  margin-bottom: 10px;
+  font-weight: 700
+}
+
+.config_pane .cfg_title .edit-group {
+  font-weight: 400;
+  position: absolute;
+  top: 0;
+  right: 0
+}
+
+.config_pane .cfg_title .edit-group i {
+  font-size: 18px;
+  cursor: pointer;
+  color: #3A40D4;
+  margin-right: 4px
+}
+
+.config_pane .cfg_split {
+  border-top: solid 1px #e1e1e1;
+  height: 0;
+  margin: 15px 0
+}
+
+.config_pane .cfg_content {
+  position: relative;
+  margin-bottom: 10px
+}
+
+.config_pane .cfg_content.with-split-line {
+  margin: 0
+}
+
+.config_pane .cfg_content .group_item {
+  line-height: 35px
+}
+
+.config_pane .cfg_content.error {
+  color: #E64340
+}
+
+.config_pane .cfg_content.x-richtext .note-editable {
+  font-size: 12px;
+  color: #91A1B7;
+  line-height: 1.4
+}
+
+.config_pane .cfg_content.cfg_separator_richtext.x-richtext .note-editable {
+  font-size: 14px;
+  color: #1F2D3D;
+  line-height: 1.4
+}
+
+.config_pane .cfg_content.effective-client-tip {
+  color: #91A1B7;
+  font-size: 12px;
+  line-height: 17px;
+  margin-left: 19px
+}
+
+.config_pane .cfg_content .rely-fields-trigger>.error,
+.config_pane .cfg_content.link-field-edit .field-item .field-name.error {
+  color: #E64340
+}
+
+.config_pane .cfg_content .rely-fields-trigger {
+  height: 100%
+}
+
+.config_pane .cfg_content .rely-fields-trigger>* {
+  display: inline-block;
+  vertical-align: top
+}
+
+.config_pane .cfg_content .rely-fields-trigger .entry-name {
+  max-width: 128px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+
+.config_pane .cfg_content.link-field-edit .field-item .field-name {
+  width: 215px
+}
+
+.config_pane .cfg_content.link-field-edit .field-item .edit-group {
+  margin-top: 2px
+}
+
+.config_pane .cfg_widget_type {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: 400;
+  z-index: 1;
+  width: 100px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 22px;
+  cursor: pointer;
+  background-color: #DEF1FF;
+  border: 1px solid #90BDDE;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px
+}
+
+.config_filter_pane .filter-combo i,
+.config_filter_pane .filter-combo input,
+.filter_pane .combo-filter i,
+.filter_pane .combo-filter input {
+  border-color: transparent
+}
+
+.config_pane .cfg_widget_type .widget_type_pane .icon-angledown {
+  padding-left: 2px
+}
+
+.config_pane .cfg_widget_type .widget_type_list {
+  box-shadow: 0 2px 3px rgba(51, 51, 51, .2);
+  overflow: hidden;
+  display: none;
+  background: #fff
+}
+
+.config_pane .cfg_widget_type .widget_type_list.list_show {
+  display: block
+}
+
+.config_pane .cfg_widget_type .widget_type_list .widget_type_item {
+  text-align: center;
+  position: relative;
+  padding-right: 8px
+}
+
+.config_pane .cfg_widget_type .widget_type_list .widget_type_item.item_disable {
+  color: #999
+}
+
+.config_pane .cfg_widget_type .widget_type_list .widget_type_item:hover {
+  background-color: #eee
+}
+
+.config_pane .fx-layout-combo {
+  position: absolute;
+  top: 0;
+  right: 0
+}
+
+.config_pane .fx-layout-subform-item {
+  padding-left: 20px
+}
+
+.config_pane .field-list li,
+.field_edit_pane .field-list li {
+  line-height: 30px
+}
+
+.config_pane .field-list li.placeholder,
+.field_edit_pane .field-list li.placeholder {
+  border: 1px dashed #3A40D4
+}
+
+.config_pane .field-list li.dragged,
+.field_edit_pane .field-list li.dragged {
+  position: absolute;
+  opacity: .7;
+  z-index: 2000
+}
+
+.config_pane .field-list .field-item,
+.field_edit_pane .field-list .field-item {
+  position: relative
+}
+
+.config_pane .field-list .field-item .field-name,
+.field_edit_pane .field-list .field-item .field-name {
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: move
+}
+
+.config_pane .field-list .field-item>.field-label,
+.field_edit_pane .field-list .field-item>.field-label {
+  height: 30px
+}
+
+.config_pane .field-list .field-item>.field-label.selected>.edit-group,
+.config_pane .field-list .field-item>.field-label:hover>.edit-group,
+.field_edit_pane .field-list .field-item>.field-label.selected>.edit-group,
+.field_edit_pane .field-list .field-item>.field-label:hover>.edit-group {
+  display: block
+}
+
+.config_pane .field-list .field-item>.field-label:hover>.field-name,
+.field_edit_pane .field-list .field-item>.field-label:hover>.field-name {
+  max-width: 200px
+}
+
+.config_pane .field-list .field-item>.field-label:hover,
+.field_edit_pane .field-list .field-item>.field-label:hover {
+  background-color: #e6f7f6
+}
+
+.config_pane .field-list .sub-field-list,
+.field_edit_pane .field-list .sub-field-list {
+  height: auto;
+  overflow: hidden
+}
+
+.config_pane .field-list .sub-field-list>.field-label>i,
+.field_edit_pane .field-list .sub-field-list>.field-label>i {
+  position: absolute;
+  display: block;
+  font-size: 16px;
+  color: #3A40D4
+}
+
+.config_pane .field-list .sub-field-list .field-name,
+.field_edit_pane .field-list .sub-field-list .field-name {
+  width: 180px;
+  margin-left: 20px
+}
+
+.config_pane .field-list .sub-field-list.closed,
+.field_edit_pane .field-list .sub-field-list.closed {
+  height: 30px
+}
+
+.config_pane .field-list .sub-field-list.closed>.field-label>i,
+.field_edit_pane .field-list .sub-field-list.closed>.field-label>i {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg)
+}
+
+.config_pane .field-list .sub-field-list.dragged,
+.field_edit_pane .field-list .sub-field-list.dragged {
+  width: 100%;
+  height: 30px
+}
+
+.config_pane .field-list ul.subform-fields .field-label,
+.field_edit_pane .field-list ul.subform-fields .field-label {
+  padding-left: 30px
+}
+
+.config_pane .field-list ul.subform-fields .field-name,
+.field_edit_pane .field-list ul.subform-fields .field-name {
+  width: 170px
+}
+
+.config_pane .field-list ul.subform-fields .sub-field-name,
+.field_edit_pane .field-list ul.subform-fields .sub-field-name {
+  width: 170px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: move
+}
+
+.config_pane .field-list ul.subform-fields .sub-field-name.error,
+.field_edit_pane .field-list ul.subform-fields .sub-field-name.error {
+  color: #E64340
+}
+
+.config_pane .field-list .edit-group,
+.field_edit_pane .field-list .edit-group {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none
+}
+
+.config_pane .field-list .edit-group>i,
+.field_edit_pane .field-list .edit-group>i {
+  font-size: 16px;
+  line-height: 22px;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 3px;
+  cursor: pointer
+}
+
+.config_pane .field-list .edit-group>i.nav-edit,
+.field_edit_pane .field-list .edit-group>i.nav-edit {
+  color: #3F80AE
+}
+
+.config_pane .field-list .edit-group>i.nav-edit:hover,
+.field_edit_pane .field-list .edit-group>i.nav-edit:hover {
+  color: #178cdf
+}
+
+.config_pane .field-list .edit-group>i.nav-remove,
+.field_edit_pane .field-list .edit-group>i.nav-remove {
+  color: #3F80AE
+}
+
+.config_pane .field-list .edit-group>i.nav-remove:hover,
+.field_edit_pane .field-list .edit-group>i.nav-remove:hover {
+  color: #E64340
+}
+.flow_config .cfg_content .action-back-nodes .fui_trigger-btn,
+.flow_config .cfg_content .action-back-nodes .fui_trigger-input,
+.flow_config .cfg_content .action-save-title .x-input {
+  height: 30px
+}
+.flow_config .cfg_content {
+  margin-bottom: 15px
+}
+
+.flow_config .cfg_content.cfg_segment .fui_segment_item {
+  width: 49%
+}
+
+.flow_config .cfg_content .action-back-nodes {
+  line-height: 28px
+}
+
+.flow_config .flow-node-tip {
+  margin: 22px;
+  padding: 15px 20px;
+  background: #f2f5f9;
+  font-size: 12px;
+  line-height: 20px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px
+}
+
+.flow_config .flow-node-tip>.link {
+  padding: 0 5px;
+  text-decoration: underline;
+  color: #3A40D4
+}
+
+.flow_config .action-wrapper {
+  margin-bottom: 10px
+}
+
+.flow_config .action-wrapper .cfg_split {
+  border-top: solid 1px #e1e1e1;
+  height: 0;
+  margin: 10px 0
+}
+
+.flow_config .action-wrapper .cfg_title {
+  margin-bottom: 10px;
+  font-weight: 700
+}
+
+.flow_config .action-wrapper .action-switch {
+  float: right
+}
